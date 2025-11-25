@@ -19,7 +19,7 @@ $liveevent = true;
         <?php
         if ($liveevent) {
         echo '<div class="bar">
-            <p>There is an event coming up! <a href="event.php">Event Hub</a></p>
+            <p>Server will be updating to 1.21.10 soon!</p>
         </div>';
         }
         ?>
