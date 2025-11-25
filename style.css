@@ -1,0 +1,284 @@
+body, html {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Merriweather;
+}
+
+.header {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    text-align: center;
+    place-items: center;
+    background-color: #000;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.header {
+    color: #aaa;
+    transition: color 0.3s;
+}
+.header h1 {
+    font-size: 100px;
+    text-shadow:
+        1px 1px 0 #000,
+        -1px 1px 0 #000,
+        -1px -1px 0 #000,
+        1px -1px 0 #000;
+}
+.header:hover {
+    color: #fff;
+}
+.header a {
+    text-decoration: underline;
+    color: inherit;
+}
+.header a:hover {
+    text-decoration: none;
+}
+
+.button {
+    text-decoration: none !important;
+    padding: 12px;
+    border-radius: 5px;
+    display: inline-block;
+}
+.button a {
+    text-decoration: underline;
+    color: inherit;
+}
+.button a:hover {
+    text-decoration: none;
+}
+
+.green {
+    color: #030 !important;
+    background-color: #070;
+    transition: color 0.2s, background-color 0.2s;
+}
+.green:hover {
+    color: #0e0 !important;
+    background-color: #030;
+}
+.yellow {
+    color: #aa0 !important;
+    background-color: #550;
+    transition: color 0.2s, background-color 0.2s;
+}
+.yellow:hover {
+    color: #ff0 !important;
+    background-color: #330;
+}
+.blue {
+    color: #55a !important;
+    background-color: #00a;
+    transition: color 0.2s, background-color 0.2s;
+}
+.blue:hover {
+    color: #77f !important;
+    background-color: #008;
+}
+.gray {
+    background-color: #bbb;
+    color: #555 !important;
+    transition: color 0.2s, background-color 0.2s;
+}
+.gray:hover {
+    background-color: #777;
+    color: #fff !important;
+}
+
+.gridbox {
+    width: 100%;
+    padding: 50px;
+    display: grid;
+    place-items: center;
+    background-color: #333;
+    transition: background-color 0.3s,color 0.3s;
+    color: #aaa;
+    box-sizing: border-box;
+}
+.gridbox:hover {
+    background-color: #444;
+    color: #fff;
+}
+.gridbox a {
+    text-decoration: underline;
+    color: inherit;
+}
+.gridbox a:hover {
+    text-decoration: none;
+}
+
+.escape {
+    position: fixed;
+    padding: 3px;
+    background-color: #fff;
+    border-radius: 0px 7px 7px 0px;
+    padding: 3px;
+    display: block;
+    transition: background-color 0.2s;
+    top: 5px;
+}
+.escape a {
+    color: #000;
+    text-decoration: none;
+}
+.escape:hover {
+    background-color: #ccc;
+}
+
+table {
+    border-collapse: collapse;
+    margin-bottom: 15px;
+}
+table .left {
+    text-align: right;
+    border-right: 1px solid #bbb;
+    padding-right: 5px;
+
+}
+table .right {
+    text-align: left;
+    border-left: 1px solid #bbb;
+    padding-left: 5px;
+}
+tr:nth-child(even) td {
+    background-color: #333;
+    color: #fff;
+}
+tr:nth-child(odd) td {
+    background-color: #888;
+    color: #000;
+}
+tr:nth-child(even):hover td {
+    background-color: #666;
+    color: #fff;
+}
+tr:nth-child(odd):hover td {
+    background-color: #aaa;
+    color: #000;
+}
+th {
+    color: #fff;
+}
+td a {
+    color: inherit;
+    text-decoration: underline;
+}
+td:hover a {
+    text-decoration: none;
+}
+
+.tablebox {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: #000;
+}
+
+.bar {
+    background-color: #a00;
+    color: #ccc;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: background-color 0.3s, color 0.3s;
+    text-align: center;
+}
+.bar:hover {
+    background-color: #f00;
+    color: #fff;
+}
+.bar p {
+    padding: 10px;
+    margin: 0;
+}
+.bar a {
+    color: inherit;
+    transition: color 0.3s, background-color 0.3s, border-color 0.3s;
+    border: 1px solid white;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+.bar a:hover {
+    color: #ccc;
+    border-color: #ccc;
+    background-color: #d00;
+}
+
+.taken {
+    background-color: #f00 !important;
+    transition: background-color 0.3s;
+    color: #000 !important;
+}
+.taken:hover {
+    background-color: #a00 !important;
+}
+.free {
+    background-color: #0f0 !important;
+    transition: background-color 0.3s;
+    color: #000 !important;
+}
+.free:hover {
+    background-color: #0a0 !important;
+}
+
+#claimbox {
+    position: fixed;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    place-items: center;
+}
+#claimbox form {
+    display: grid;
+    width: 25%;
+    background-color: #aaa;
+    padding: 15px;
+    border-radius: 20px;
+    grid-template-columns: 50% 50%;
+}
+#claimbox form p {
+    display: inline-block;
+    background-color: #aaa;
+    text-align: center;
+    border: 1px solid #000;
+}
+#claimbox form input[type=submit] {
+    display: inline-block;
+    background-color: #aaa;
+    text-align: center;
+    border: 1px solid #000;
+    margin-top: 10px;
+}
+#claimbox form input[type=submit], #claimbox form p {
+    grid-column: 1 / span 2;
+    transition: background-color 0.3s;
+}
+#claimbox form input[type=submit]:hover, #claimbox form p:hover {
+    background-color: #888;
+}
+#claimbox form label {
+    text-align: right;
+    padding-right: 7px;
+}
+#claimbox form input[type=text] {
+    background: none !important;
+    border: 1px solid #444 !important;
+    margin-bottom: 3px;
+    outline: none !important;
+}
+#claimbox form input[type=text]:hover, #claimbox form input[type=text]:focus {
+    border-color: #000 !important;
+}
+
+.invis {
+    display: none !important;
+}
