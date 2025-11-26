@@ -17,7 +17,7 @@ $showbar = true;
             <a href="info.php" class="button blue" style="grid-column: 3">Server Info</a>
         </div>
         <?php
-        if $showbar {
+        if ($showbar) {
         echo '<div class="bar"><p>Server will be updating to 1.21.10 during the Christmas holidays!</p></div>';
         }
         ?>
