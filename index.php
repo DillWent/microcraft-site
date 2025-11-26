@@ -1,5 +1,5 @@
 <?php
-$liveevent = true;
+$showbar = true;
 ?>
 <!DOCTYPE html>
 <html>
@@ -16,8 +16,10 @@ $liveevent = true;
             <a href="http://<?= file_get_contents("http://ipecho.net/plain") ?>:25566" class="button yellow" style="grid-column: 2">Dynmap</a>
             <a href="info.php" class="button blue" style="grid-column: 3">Server Info</a>
         </div>
-        <div class="bar">
-            <p>Server will be updating to 1.21.10 during the Christmas holidays!</p>
-        </div>
+        <?php
+        if $showbar {
+        echo '<div class="bar"><p>Server will be updating to 1.21.10 during the Christmas holidays!</p></div>';
+        }
+        ?>
     </body>
 </html>
