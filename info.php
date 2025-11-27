@@ -16,5 +16,9 @@
             <p class="button blue" style="grid-column: 3">Server Version: 1.21.5</p>
             <p class="button yellow" style="grid-column: 4">Latest Modpack Version: <a href="download.php?v=latest">1.1.0</a></p>
         </div>
+        <div class="gridbox">
+            <p>The server has a variety of custom item textures and models. These are used for events or as special Collector's Items. If you would like one, you can use this form to request a custom item.</p>
+            <a href="itemrequest.php" class="button gray">Custom Item Request Form</a>
+        </div>
     </body>
 </html>
