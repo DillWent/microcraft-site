@@ -3,6 +3,7 @@ if ($_GET["s"] == "itemrequest") {
     $data = json_decode(file_get_contents("itemrequests.json"), true);
     $file = fopen("itemrequests.json", "w");
     $newdata = Array();
+    $newdata["read"] = false;
     $newdata["requestor"] = $_POST["requestor"];
     $newdata["no"] = $_POST["no"];
     $newdata["requestName"] = $_POST["requestName"];

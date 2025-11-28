@@ -16,7 +16,7 @@ if (isset($_SESSION["username"]) && isset($_SESSION["password"])) {
     </head>
     <body>
         <h1>Admin Portal Login</h1>
-        <form>
+        <form action="handle.php?s=login" method="post">
             <label for="username">Username</label>
             <input type="text" id="username" name="username" />
             <label for="password">Password</label>
