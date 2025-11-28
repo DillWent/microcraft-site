@@ -13,6 +13,17 @@ if (isset($_GET["s"])) {
             }
         }
         header("Location: verify.php");
+    } elseif ($_GET["s"] == "setunread") {
+        if (isset($_GET["r"])) {
+            $requests = json_decode(file_get_contents("../itemrequests.json"), true);
+            $requests[(int) $_GET["r"]]["read"] = false;
+            $f = fopen("../itemrequests.json", "w");
+            fwrite($f, json_encode($requests));
+            fclose($f);
+            header("Location: requests.php");
+        } else {
+            header("Location: requests.php");
+        }
     } else {
         header("Location: verify.php");
     }

@@ -19,17 +19,18 @@ if (isset($_SESSION["username"]) && isset($_SESSION["password"])) {
         <h3>Logged in as <?= $_SESSION["username"] ?> - <a href="handle.php?s=logout">log out</a></h3>
         <hr />
         <h2>Navigation</h2>
-        <a href="itemrequests.php">Item requests</a>
+        <a href="requests.php">Item requests</a>
         <hr />
-        <h2>Needs your attention</h2>
+        <h2>Unseen</h2>
+        <ul>
 <?php
 $requests = json_decode(file_get_contents("../itemrequests.json"), true);
 foreach ($requests as $request) {
     if (!$request["read"]) {
-        echo "item request: ";
-        echo $request["name"];
+        echo '<li>Item Request: <a href="request.php?r=' . array_search($request, $requests) . '">' . $request["requestName"] . " from " . $request["requestor"] . "</a></li>";
     }
 }
 ?>
+        </ul>
     </body>
 </html>

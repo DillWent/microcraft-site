@@ -1,1 +1,1 @@
-[{"requestor":"DillWent","no":"120","requestName":"Dark Chocolate Bar","desc":"A dark chocolate bar item","reason":"Daily reward in server advent calendar","name":"Advent Chocolate","lore":"Looks tasty. I should eat it.","collectors":false,"3d":false,"read":false}]
+[{"read":true,"requestor":"DillWent","no":"120","requestName":"Dark Chocolate Bar","desc":"A dark chocolate bar item","reason":"Daily reward in server advent calendar","name":"Advent Chocolate","lore":"It looks tasty. I should eat it.","collectors":false,"3d":false}]
